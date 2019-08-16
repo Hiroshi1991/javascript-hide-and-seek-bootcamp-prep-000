@@ -1,28 +1,18 @@
 function getFirstSelector(selector){
-  var test = document.querySelector(selector);
-  //console.log(test);
-  return document.querySelector(selector);
+ var match = document.querySelector(selector) ;
+ return match;
 }
-
-function nestedTarget() {
-  return document.querySelector('#nested .target');
+function nestedTarget(){
+var match = document.querySelector('#nested .target')
+return match;
 }
-
-function increaseRankBy(n) {
-  var elements = document.querySelectorAll('ul.ranked-list li');
-
-  for (var i = 0; i < elements.length; i++) {
-    elements[i].innerHTML = parseInt(elements[i].innerHTML) + parseInt(n);
+function increaseRankBy(n){
+  var match = document.querySelectorAll('ranked-list li')
+  for (let i=0; i<match.length;i++){
+    match[i].innerHTML = parseInt(match[i].innerHTML)+n;
   }
+  return match;
 }
 
-function deepestChild() {
-  var parent = document.getElementById('grand-node');
-}
-
-var child = "";
-
-function deepestChild() {
-  var parent = document.getElementById('grand-node');
-  
-}
+function test(){
+  var match = document.querySelectorAll('#grand-node')
