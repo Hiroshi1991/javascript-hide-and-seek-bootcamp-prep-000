@@ -8,11 +8,10 @@ function getFirstSelector(selector){
 
  }
 function increaseRankBy(n){
-  const upRank = document.getElementById('app').querySelectorAll('ul.ranked-list')
-
-   for (let i = 0; i < upRank.length; i++){
-    upRank[i].innerHTML = ((parseInt(upRank[i].innerHTML)) + n)
-    }
+  var match = document.querySelectorAll('ranked-list li')
+  for (let i=0; i<match.length;i++){
+    match[i].innerHTML = parseInt(match[i].innerHTML)+n;
+  }
 
  }
 
