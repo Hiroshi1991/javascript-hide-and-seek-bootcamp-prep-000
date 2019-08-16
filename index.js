@@ -8,9 +8,9 @@ function getFirstSelector(selelctor){
 
  function increaseRankBy(n){
 var list = document.querySelectorAll('ul.ranked-list li')
-for (let i = 0; i < list.length;i++{
+for (let i = 0; i < list.length;i++) {
   list[i].innerHTML= parseInt(list[i].innerHTML, 10) + n;
-  }
+}
 }
 
  function deepestChild() {
@@ -18,3 +18,4 @@ for (let i = 0; i < list.length;i++{
   for (let i=0, 1=list.length; i<1; i++) {
     list[i].innerHTML = (i+1).toString()
   }
+  
