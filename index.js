@@ -15,4 +15,5 @@ function increaseRankBy(n){
 }
 
 function test(){
+}
   var match = document.querySelectorAll('#grand-node')
